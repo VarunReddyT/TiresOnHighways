@@ -7,7 +7,7 @@ body {
   /* background-image: url('tireT.jpg'); */
   color: black;
   background-image: url('highway2.jpg');
-
+  padding-top: 80px;
   /* background: fixed; */
   /* display: flex; */
   background-attachment: fixed;
