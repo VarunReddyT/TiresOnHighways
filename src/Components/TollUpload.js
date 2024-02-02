@@ -19,7 +19,7 @@ export default function TollUpload(props) {
     if (uploadStatus) {
       const timeoutId = setTimeout(() => {
         setUploadStatus(false);
-      }, 2000);
+      }, 5000);
 
       return () => clearTimeout(timeoutId); // This will clear the timeout if the component unmounts or if uploadStatus changes before the timeout completes
     }
