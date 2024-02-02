@@ -61,7 +61,7 @@ export default function GuestDetails(props) {
         }
         else {
 
-            console.log(response.data.userTyre64)
+            console.log(response.data)
 
 
             setPhoneNo(response.data.userMobileNumber);
@@ -95,10 +95,9 @@ export default function GuestDetails(props) {
                         <div className="col mt-3">
                             <input type="text" onChange={handleVnoChange} className="form-control border border-black" placeholder='Vehicle Number' name="VehicleNumber" id="vehicleU" required />
                         </div>
-                        <div>
                         <div className="d-flex mt-3 justify-content-lg-around">
-                            <div className="">
-                                <Link to="/guest" className="btn btn-warning" id="blackbut">Go Back</Link>
+                            <div>
+                                <Link to="/guest" className="btn btn-warning back" id="blackbut">Go Back</Link>
                             </div>
                             {res && <div className="ms-3">
                                 <button type="button" className="btn btn-success" data-bs-toggle="modal" data-bs-target="#backdrop" >Result</button>
@@ -135,15 +134,13 @@ export default function GuestDetails(props) {
                                     </div>
                                 </div>
                             </div>}
-                            
                             <div className="ms-3">
-                                <button type="submit" className="btn btn-primary">Submit</button>
+                                <button type="submit" className="btn btn-primary detSub">Submit</button>
                             </div>
-                        </div>
-                        </div>
-                        {NoData && <div className="container d-flex justify-content-center align-items-center h-50">
-                                <p className="alert alert-danger">No data found</p>
+                            {NoData && <div className="container d-flex justify-content-center align-items-center h-50">
+                                <p class="alert alert-danger">NotFound</p>
                             </div>}
+                        </div>
                         {loader && <Loader />}
 
                     </form>

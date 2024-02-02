@@ -6,6 +6,9 @@ export default function Footer() {
   return (
     <footer className='footer'>
       <div className=' bg-light mb-0 '>
+            {/* <div className="row fs-4 fw-bolder ms-2 pb-0 mb-0 border-bottom ">
+              Tires On Highways
+            </div> */}
         <div className="row border-bottom">
           <div className="col-sm-4 d-flex justify-content-center">
             <div className="row">
@@ -25,6 +28,12 @@ export default function Footer() {
                   
                 </ul>
               </div>
+              {/* <div className="col-12 text-center fs-6 mt-3">
+                -A project by Team G81
+                <br />
+                A Thoughtful website to alert users about the condition of the tires.
+                
+              </div> */}
 
             </div>
           </div>

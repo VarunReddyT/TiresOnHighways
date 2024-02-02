@@ -89,8 +89,8 @@ export default function TollLogin({ setSelectedToll, setSignInButton, setCookie 
 
   return (
     <div className='container d-flex justify-content-center align-items-center'>
-      <div className='mt-4 '>
-        <form className="shadow-lg rounded-4 p-4 border-3" >
+      <div className='mt-5'>
+        <form className="shadow-lg rounded-4 p-4 border-3" style={{backdropFilter:'blur(3px'}} >
           <div className='row'>
             <h1>Sign In to Toll Plaza</h1>
           </div>
