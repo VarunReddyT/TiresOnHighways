@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "toh_app",
   "version": "0.1.0",
   "private": true,
@@ -7,12 +8,27 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.7",
+=======
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Routes.js",
+  
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.5",
+>>>>>>> 04182f1 (Model)
     "bcrypt": "^5.1.1",
     "blob-util": "^2.0.2",
     "bootstrap": "^5.3.2",
     "concurrently": "^8.2.2",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+<<<<<<< HEAD
     "express": "^4.18.2",
     "mongodb": "^6.2.0",
     "mongoose": "^8.0.1",
@@ -51,5 +67,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+=======
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.2",
+    "twilio": "^5.0.0-rc.1"
+>>>>>>> 04182f1 (Model)
   }
 }
