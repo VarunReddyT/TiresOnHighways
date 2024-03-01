@@ -22,6 +22,7 @@ import './all_css/Footer.css';
 import './all_css/TollSignIn.css';
 import './all_css/Navbar.css';
 import './App.css';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const NotFound = (props) => (
   <h1>404 Error. The page you are looking for does not exist</h1>
@@ -45,6 +46,7 @@ function App() {
 
   return (
     <>
+    <SpeedInsights/>
       <div className="app-container">
         <Router>
           <Navbar signInButton={signInButton} setCookie={setCookie} />
