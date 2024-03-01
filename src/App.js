@@ -15,6 +15,7 @@ import Loader from './Components/Loader';
 import CheckRecords from './Components/TollCheckRecords';
 import NoAccess from './Components/NoAccess';
 import Footer from './Components/Footer';
+import Feedback from './Components/Feedback';
 import './all_css/Home.css';
 import './all_css/Loader.css';
 import './all_css/Footer.css';
@@ -73,6 +74,7 @@ function App() {
             <Route path='/guest' element={<Guest setSignInButton={setSignInButton} />} />
             <Route path='/guest/upload' element={<GuestUpload setSignInButton={setSignInButton} />} />
             <Route path='/guest/checkdetails' element={<GuestDetails setSignInButton={setSignInButton} />} />
+            <Route path = '/feedback' element = {<Feedback/>}/>
             <Route path='*' element={<NotFound setSignInButton={setSignInButton} />} />
           </Routes>
         </Router>
