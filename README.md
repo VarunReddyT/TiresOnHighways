@@ -29,7 +29,7 @@ A full-stack web application for intelligent tire safety monitoring and toll man
 ### 1. Clone the repository
 ```sh
 git clone https://github.com/VarunReddyT/TiresOnHighways.git
-cd TOH_Updated
+cd TiresOnHighways
 ```
 
 ### 2. Install dependencies
