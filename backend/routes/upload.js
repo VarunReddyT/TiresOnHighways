@@ -1,5 +1,4 @@
 const express = require('express');
-const multer = require('multer');
 const axios = require('axios');
 const FormData = require('form-data');
 const TollData = require('../models/TollData');
@@ -8,17 +7,6 @@ const { auth } = require('../middleware/auth');
 
 const router = express.Router();
 
-// Multer configuration for handling file uploads
-const storage = multer.memoryStorage();
-const upload = multer({ 
-    storage: storage, 
-    limits: { 
-        fieldSize: 25 * 1024 * 1024,  // 25MB
-        fileSize: 10 * 1024 * 1024    // 10MB per file
-    }
-});
-
-// Helper function to analyze images with Flask API
 const analyzeImages = async (base64Images) => {
     try {
         const flaskApiUrl = process.env.FLASK_API_URL || 'http://localhost:5000';
